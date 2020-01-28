@@ -15,7 +15,7 @@ public class Activity_Profile extends Activity {
 	TextView tab_1;
 	Button bttn_base_0, bttn_base_1;
 	TextView nav_tv_1;
-	TextView nav_tv_2;
+	TextView nav_tv_0;
 	
 	
 	Context ctx;
@@ -33,7 +33,7 @@ public class Activity_Profile extends Activity {
 
 		nav_tv_1 = (TextView )findViewById(R.id.nav_tv_1);
 		
-		nav_tv_2 = (TextView )findViewById(R.id.nav_tv_2);
+		nav_tv_0 = (TextView )findViewById(R.id.nav_tv_0);
 		
 		bttn_base_0=(Button)findViewById(R.id.base_bttn_0);
 		
@@ -41,11 +41,11 @@ public class Activity_Profile extends Activity {
 		
 		bttn_base_0.setText(getResources().getString(R.string.get_your_account_for_more_features));
 		
-		nav_tv_2.setOnTouchListener(new OnTouchListener() {
+		nav_tv_0.setOnTouchListener(new OnTouchListener() {
 			
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				if(v.getId()==nav_tv_2.getId()) {
+				if(v.getId()==nav_tv_0.getId()) {
 				switch (event.getActionMasked()){
 
   						case MotionEvent.ACTION_DOWN:
@@ -78,11 +78,11 @@ public class Activity_Profile extends Activity {
 		});
 		
 		
-       nav_tv_2.setOnTouchListener(new OnTouchListener() {
+       nav_tv_1.setOnTouchListener(new OnTouchListener() {
 			
 			@Override
 			public boolean onTouch(View v, MotionEvent event) {
-				if(v.getId()==nav_tv_2.getId()) {
+				if(v.getId()==nav_tv_1.getId()) {
 				switch (event.getActionMasked()){
 
   						case MotionEvent.ACTION_DOWN:
